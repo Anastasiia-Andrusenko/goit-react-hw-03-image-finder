@@ -5,7 +5,7 @@ import Searchbar from "./Searchbar/Searchbar";
 import Notification from "./Notification/Notification";
 import Button from "./Button/Button";
 import Loader from "./Loader/Loader";
-import Modal from "./Modal/Modal";
+// import Modal from "./Modal/Modal";
 
 
 
