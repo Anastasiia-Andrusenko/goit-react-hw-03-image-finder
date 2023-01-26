@@ -1,9 +1,9 @@
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import css from '../ImageGallery/ImageGallery.module.css';
 
-const ImageGallery = () => {
+const ImageGallery = ({imgArray, onClick}) => {
   return <ul className={css.gallery}>
-    <ImageGalleryItem/>
+    {imgArray.map(img => <ImageGalleryItem key={img.id} src={img.webformatURL} tags={img.tags} onClick={onClick} /> )}
 </ul>
 }
 

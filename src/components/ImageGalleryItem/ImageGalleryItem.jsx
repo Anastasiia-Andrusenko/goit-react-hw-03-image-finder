@@ -1,8 +1,8 @@
 import css from '../ImageGalleryItem/ImageGalleryItem.module.css';
 
-const ImageGalleryItem = () => {
+const ImageGalleryItem = ({src, tags, onClick}) => {
   return <li className={css.item}>
-  <img src="" alt="" />
+    <img src={src} alt={tags} className={css.image} onClick={() => onClick(src)} />
 </li>
 }
 
