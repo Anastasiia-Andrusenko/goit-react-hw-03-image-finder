@@ -13,6 +13,8 @@ import fetchImg from "../api/fetch";
 var Scroll = require('react-scroll');
 var scroll = Scroll.animateScroll;
 
+
+
 export class App  extends Component {
   state = {
     imgArray: [],
@@ -32,10 +34,6 @@ export class App  extends Component {
     if (prevKeyWord !== currentKeyWord || prevPage !== currentPage) {
       const { keyWord, page } = this.state;
       this.setState({ isLoading: true });
-
-      // if (prevKeyWord !== currentKeyWord) {
-      //   this.setState({imgArray: []});
-      // }
 
       fetchImg(keyWord, page).then(response => {
         console.log(response.hits);
