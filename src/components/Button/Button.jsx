@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 import css from '../Button/Button.module.css';
 
 const Button = ({loadMoreBtn}) => {
@@ -7,3 +7,8 @@ const Button = ({loadMoreBtn}) => {
 }
 
 export default Button;
+
+Button.propTypes = {
+  children: PropTypes.string.isRequired,
+  loadMoreBtn: PropTypes.func.isRequired,
+}
